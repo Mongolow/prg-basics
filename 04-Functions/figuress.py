@@ -21,5 +21,27 @@ def draw_square(length):
     pen.hideturtle()
     window.mainloop()
 
+def draw_triangle(length):
 
-draw_square(100)
+    window = turtle.Screen()
+    window.bgcolor("lightgreen")
+
+    # Create the turtle
+    pen = turtle.Turtle()
+    pen.speed(5)
+
+    # Side length
+    side_length = length
+
+    # Draw a square
+    for i in range(3):
+        pen.forward(side_length)
+        pen.left(120)
+        
+        
+
+    # Hide the turtle and finish
+    pen.hideturtle()
+    window.mainloop()
+
+

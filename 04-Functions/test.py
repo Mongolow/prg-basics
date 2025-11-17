@@ -1,4 +1,4 @@
 import turtle
 import figuress
 
-figuress.draw_square(100)
+figuress.draw_triangle(120)
