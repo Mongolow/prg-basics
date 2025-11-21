@@ -63,8 +63,39 @@ def f5(x):
         wynik = wynik + '/*'
     return wynik
 
-if __name__ == '__main__':
-    print(f5(20))
+#if __name__ == '__main__':
+    #print(f5(20))
+
+def f6(x):
+    string = ''
+    for i in range(1,x+1):
+        i = str(i)
+        string = string + i
+    return string
+
+#if __name__ == '__main__':
+    #print(f6(4))
+
+def f7(string):
+    string = str(string)
+    znacznik = 0
+    wynik = False
+    for char in string:
+        if znacznik >= 3:
+            wynik = True
+            break
+        if char == '+':
+            znacznik = znacznik  + 1 
+        else:
+            znacznik = 0
+    return wynik 
+
+#if __name__ == '__main__':
+    #print(f7('+-++-+-'))
+
+    
+    
+        
 
 
 
